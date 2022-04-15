@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>
+			Login Form
+		</title>
+		<style>
+		#background
+		{
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		}
+		table
+		{
+			color:black;
+			background-color:transparent;
+		}
+		p.thicker
+		{
+			font-weight:900;
+			font-size:30px;
+		}
+		p.normal
+		{
+			font-weight:500;
+			font-size:20px;
+		}
+		#Login_btn
+		{
+			background-color:#FF7300;
+			height:35px;
+			width:100px;
+			border-radius:0px;
+		}
+		#Registration_btn
+		{
+			background-color:#22A7F0;
+			height:30px;
+			width:100px;
+			border-radius:0px;
+		}
+		</style>
+	</head>
+	<body background="Background.png" id=background>
+		<br>
+		<br><br><br><br><br><br>
+		<form action="Login_DB_Connection.php" method="POST">
+			<table align="center" border="0" cellspacing="15" style="font-size:20px">
+				<tr></tr>
+				<tr>
+					<td align="center" colspan="2" style="font-size:30px"><p class="thicker">Login Page</p></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2"><img src="Userpic1.png" height="110" width="110"</td>
+				</tr>
+				<tr>
+					<td>Registration_ID <td><input type="text" placeholder="User ID" name="user_id" required></td>
+				</tr>
+				<tr>
+					<td>Password <td><input type="password" placeholder="Password" name="password" required></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2">
+					<input type="submit" value="Login" id="Login_btn" name="login" style="font-size:20px">
+					</td>
+				</tr>
+				<tr>
+					<td>New user?
+					<a href="RegistrationPage.html">
+					<input type="button" value="Register" id="Registration_btn" style="font-size:17px">
+					</a></td>
+					<td align="right">
+					<a href="ForgotPassword.html">
+					<p class="bold"><font color="#E74C3C">Change/Forgot password?</p>
+					
+					</a></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
+
